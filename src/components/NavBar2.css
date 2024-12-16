@@ -1,6 +1,12 @@
 /* Navbar Styles */
+.bgnav{
+  background-image: url("/assets/mainnavbg.webp");
+  background-size: contain;
+  background-repeat: repeat;
+}
+
 .nav1 {
-    @apply bg-transparent p-[0px] w-full flex justify-start items-start; /* Center the content */
+    @apply p-[0px] w-[98%] ml-[1%] mr-[1%] flex justify-start items-start; /* Center the content */
   }
   
   .navclz1 {
@@ -15,13 +21,13 @@
   } */
   
   .atag2 {
-    box-shadow: 0px 9px 0px black;
-    @apply absolute right-48 top-8 bg-white rounded-md px-4 py-2;
+    box-shadow: 7px 7px 0px black;
+    @apply absolute right-[244px] top-10 bg-white rounded-[10px] px-6 py-2 border-black border-[3px];
   }
   .atag2345 {
-    box-shadow: 0px 9px 0px black;
+    box-shadow: 7px 7px 0px black;
     /* @apply absolute right-8 top-8 bg-[#00E5FF] rounded-md px-4 py-2; */
-    @apply absolute right-8 top-8 bg-[#7a7b7b] rounded-md px-4 py-2;
+    @apply absolute right-[44px] top-10 bg-[#00E5FF] rounded-[10px] px-6 py-2 border-black border-[3px];
   }
   
   
@@ -115,6 +121,10 @@
 
 
 @media (max-width: 768px) {
+
+  .bgnav{
+    display: none;
+  }
     .nav1{
         display: none;
     }

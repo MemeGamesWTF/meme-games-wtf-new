@@ -11,6 +11,15 @@ import greentick from "/assets/greentick.svg";
 import pending from "/assets/pending.svg";
 import star from "/assets/star.svg";
 
+import rocket from "/assets/rocket.svg";
+import trophy from "/assets/trophy.svg";
+import chains from "/assets/chains.svg";
+import lock from "/assets/lock.svg";
+import balance from "/assets/balance.svg";
+import console from "/assets/console.svg";
+import hug from "/assets/hug.svg";
+import money from "/assets/money.svg";
+
 export default function RoadMap2() {
   const navigate = useNavigate();
   return (
@@ -18,8 +27,8 @@ export default function RoadMap2() {
       <>
         <NavBar2 />
 
-        <div className='rmn0'>
-          <h2 className='rmbigtopic'>Roadmap</h2>
+        <div className="rmn0">
+          <h2 className="rmbigtopic">Roadmap</h2>
         </div>
 
         {/* <div className="backbutton">
@@ -38,7 +47,10 @@ export default function RoadMap2() {
 
         <div className="phasen">
           <div className="rmn1 bg-[#00DB1D]">
-            <h2 className="topicn">🚀 PHASE 1: LAUNCH</h2>
+            <h2 className="topicn">
+              <img src={rocket} alt="Rocket" className="phaseimages" />
+              PHASE 1: LAUNCH
+            </h2>
             <img src={tick} alt="tick" className="tickn" loading="lazy" />
           </div>
 
@@ -48,8 +60,14 @@ export default function RoadMap2() {
                 <div className="rmn4second">
                   <div className="rmn6div">
                     <h1 className="rmn6">
-                      🎮 <t className="blktopic">GAMES</t>
+                      <img
+                        src={console}
+                        alt="Controller"
+                        className="boximages"
+                      />
+                      <t className="blktopic">GAMES</t>
                     </h1>
+
                     <img
                       src={star}
                       alt="star"
@@ -86,8 +104,16 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
+                    {/* <h1 className="rmn6">
                       🫂 <t className="blktopic">COMMUNITY</t>
+                    </h1> */}
+                    <h1 className="rmn6">
+                      <img
+                        src={hug}
+                        alt="Hug"
+                        className="boximages"
+                      />
+                      <t className="blktopic">COMMUNITY</t>
                     </h1>
                     <img
                       src={star}
@@ -125,8 +151,16 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
+                    {/* <h1 className="rmn6">
                       💰 <t className="blktopic">TOKEN</t>
+                    </h1> */}
+                    <h1 className="rmn6">
+                      <img
+                        src={money}
+                        alt="Money"
+                        className="boximages"
+                      />
+                      <t className="blktopic -ml-2">TOKEN</t>
                     </h1>
                     <img
                       src={star}
@@ -165,7 +199,11 @@ export default function RoadMap2() {
 
         <div className="phasen">
           <div className="rmn1 bg-[#EA3300]">
-            <h2 className="topicn">🏆 PHASE 2: COMMUNITY REPUTATION</h2>
+            {/* <h2 className="topicn">🏆 PHASE 2: COMMUNITY REPUTATION</h2> */}
+            <h2 className="topicn">
+              <img src={trophy} alt="rocket" className="phaseimages" />
+              PHASE 2: COMMUNITY REPUTATION
+            </h2>
             <img
               src={hourglass}
               alt="hourglass"
@@ -179,8 +217,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🎮 <t className="blktopic">GAMES</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={console}
+                        alt="Controller"
+                        className="boximages"
+                      />
+                      <t className="blktopic">GAMES</t>
                     </h1>
                     <img
                       src={star}
@@ -229,8 +272,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🫂 <t className="blktopic">COMMUNITY</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={hug}
+                        alt="Hug"
+                        className="boximages"
+                      />
+                      <t className="blktopic">COMMUNITY</t>
                     </h1>
                     <img
                       src={star}
@@ -268,8 +316,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      💰 <t className="blktopic">TOKEN</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={money}
+                        alt="Money"
+                        className="boximages"
+                      />
+                      <t className="blktopic -ml-2">TOKEN</t>
                     </h1>
                     <img
                       src={star}
@@ -308,7 +361,11 @@ export default function RoadMap2() {
 
         <div className="phasen">
           <div className="rmn1 bg-[#000000]">
-            <h2 className="topicn">⛓️ PHASE 3: BLOCKCHAIN INTEGRATION</h2>
+            {/* <h2 className="topicn">⛓️ PHASE 3: BLOCKCHAIN INTEGRATION</h2> */}
+            <h2 className="topicn">
+              <img src={chains} alt="chains" className="phaseimages" />
+              PHASE 3: BLOCKCHAIN INTEGRATION
+            </h2>
             <img src={blank} alt="blank" className="blankn" loading="lazy" />
           </div>
 
@@ -317,8 +374,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🎮 <t className="blktopic">GAMES</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={console}
+                        alt="Controller"
+                        className="boximages"
+                      />
+                      <t className="blktopic">GAMES</t>
                     </h1>
                     <img
                       src={star}
@@ -390,8 +452,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🫂 <t className="blktopic">COMMUNITY</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={hug}
+                        alt="Hug"
+                        className="boximages"
+                      />
+                      <t className="blktopic">COMMUNITY</t>
                     </h1>
                     <img
                       src={star}
@@ -441,8 +508,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      💰 <t className="blktopic">TOKEN</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={money}
+                        alt="Money"
+                        className="boximages"
+                      />
+                      <t className="blktopic -ml-2">TOKEN</t>
                     </h1>
                     <img
                       src={star}
@@ -496,7 +568,11 @@ export default function RoadMap2() {
 
         <div className="phasen">
           <div className="rmn1 bg-[#000000]">
-            <h2 className="topicn">🔒 PHASE 4: SHARED OWNERSHIP</h2>
+            {/* <h2 className="topicn">🔒 PHASE 4: SHARED OWNERSHIP</h2> */}
+            <h2 className="topicn">
+              <img src={lock} alt="lock" className="phaseimages" />
+              PHASE 4: SHARED OWNERSHIP
+            </h2>
             <img src={blank} alt="blank" className="blankn" loading="lazy" />
           </div>
 
@@ -505,8 +581,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🎮 <t className="blktopic">GAMES</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={console}
+                        alt="Controller"
+                        className="boximages"
+                      />
+                      <t className="blktopic">GAMES</t>
                     </h1>
                     <img
                       src={star}
@@ -533,8 +614,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🫂 <t className="blktopic">COMMUNITY</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={hug}
+                        alt="Hug"
+                        className="boximages"
+                      />
+                      <t className="blktopic">COMMUNITY</t>
                     </h1>
                     <img
                       src={star}
@@ -562,8 +648,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      💰 <t className="blktopic">TOKEN</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={money}
+                        alt="Money"
+                        className="boximages"
+                      />
+                      <t className="blktopic -ml-2">TOKEN</t>
                     </h1>
                     <img
                       src={star}
@@ -593,7 +684,11 @@ export default function RoadMap2() {
 
         <div className="phasen">
           <div className="rmn1 bg-[#000000]">
-            <h2 className="topicn">⚖️ PHASE 5: SUSTAINABILITY</h2>
+            {/* <h2 className="topicn">⚖️ PHASE 5: SUSTAINABILITY</h2> */}
+            <h2 className="topicn">
+              <img src={balance} alt="balance" className="phaseimages" />
+              PHASE 5: SUSTAINABILITY
+            </h2>
             <img src={blank} alt="blank" className="blankn" loading="lazy" />
           </div>
 
@@ -602,8 +697,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🎮 <t className="blktopic">GAMES</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={console}
+                        alt="Controller"
+                        className="boximages"
+                      />
+                      <t className="blktopic">GAMES</t>
                     </h1>
                     <img
                       src={star}
@@ -642,8 +742,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      🫂 <t className="blktopic">COMMUNITY</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={hug}
+                        alt="Hug"
+                        className="boximages"
+                      />
+                      <t className="blktopic">COMMUNITY</t>
                     </h1>
                     <img
                       src={star}
@@ -671,8 +776,13 @@ export default function RoadMap2() {
               <div className="rmn4">
                 <div className="rmn4second">
                   <div className="rmn6div">
-                    <h1 className="rmn6">
-                      💰 <t className="blktopic">TOKEN</t>
+                  <h1 className="rmn6">
+                      <img
+                        src={money}
+                        alt="Money"
+                        className="boximages"
+                      />
+                      <t className="blktopic -ml-2">TOKEN</t>
                     </h1>
                     <img
                       src={star}

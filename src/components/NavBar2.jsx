@@ -25,6 +25,7 @@ export default function NavBar2() {
 
   return (
     <>
+    <div className="bgnav">
       <nav className="nav1">
         <div className="navclz1">
           {/* <a href='/'
@@ -101,6 +102,7 @@ export default function NavBar2() {
               </div> */}
         </div>
       </nav>
+      </div>
       <div className="navbar-container">
         {/* Hamburger Menu Icon */}
         <div className="hamburger-menu" onClick={toggleMenu}>
