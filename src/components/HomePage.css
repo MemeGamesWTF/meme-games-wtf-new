@@ -68,7 +68,7 @@
 .card-header {
   @apply relative;
   height: 180px;
-  background-color: #3f6eca; /* Light Gray Background */
+  background-color: #ffffff; /* Light Gray Background */
 }
 
 .card-header-icon {
@@ -94,14 +94,24 @@
 }
 
 .dots .dot {
-  @apply bg-[#D9D9D9] rounded-full;
+  @apply bg-[#4b4a4b] rounded-full;
   width: 35px;
   height: 35px;
 }
 
+.dot.clicked {
+  background-color: #5500ff; /* Change this color as you wish */
+}
+
+.emoji-image {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px;
+  margin-left: 5.5px;
+}
+
 .share-button {
   @apply bg-[#15FF00] text-black font-normal py-0 px-5 -mt-4 ml-[210px] rounded-full shadow relative;
-  font-size: 23px;
+  font-size: 27px;
   border: 3px solid black;
   transition: all 0.2s ease;
   box-shadow: 7px 7px 0px black;
@@ -117,22 +127,27 @@
   overflow: hidden;
 }
 
-.card-header img.gamebtnsimages {
+/* .gamebtnsimages{
+  @apply bg-orange-400
+} */
+
+.card-header img.gamebtnsimages2 {
   /* display: block; */
   transition: filter 0.3s ease-in-out;
+  @apply transition-opacity duration-300;
 }
 
-.card-header:hover img.gamebtnsimages {
+.card-header:hover img.gamebtnsimages2 {
   filter: brightness(50%); /* Darkens the card */
 }
 
 .game-icon {
-  @apply opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 mx-auto my-auto;
+  @apply opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute inset-0 mx-auto my-auto;
   position: absolute;
   top: 0%;
   left: 0%;
   transform: translate(0%, 0%);
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   /* width: auto */
 }
 

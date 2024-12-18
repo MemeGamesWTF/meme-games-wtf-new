@@ -109,11 +109,21 @@
   @apply w-fit ml-auto mr-auto bg-white rounded-[10px] px-5 py-4 border-black border-[3px];
 }
 
+.atag22:hover {
+  /* @apply bg-[#84f37a]; */
+  transform: scale(1.05);
+}
+
 .atag222 {
     @apply flex gap-x-1 justify-center align-middle;
     font-family: "Jersey 10", sans-serif;
     font-weight: 500;
     font-style: normal;
+  }
+
+  .copyimg:hover {
+    /* @apply bg-[#84f37a]; */
+    transform: scale(1.15);
   }
 
 @media (max-width: 768px) {
